@@ -1,0 +1,105 @@
+<html>
+<head>
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</head>
+<body>
+    <div class="container event-calendar-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="event-header">
+                    <h3>Event Calendar</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <form class="event-form" id="eventAdd">
+                <div class="event-name">
+                    <div class="field-container">
+                        <label>Event Name:</label>
+                    </div>
+                    <div class="field-container">
+                        <input type="text" maxlength="8" id="eventTitle">
+                    </div>
+                </div>
+                <div class="event-start-time">
+                    <div class="field-container">
+                        <label>Start Time:</label>
+                    </div>
+                    <div class="field-container">
+                        <select id="startTime">
+                            <option value="0"> 9.00</option>
+                            <option value="60"> 10.00</option>
+                            <option value="120"> 11.00</option>
+                            <option value="180"> 12.00</option>
+                            <option value="240"> 1.00</option>
+                            <option value="300"> 2.00</option>
+                            <option value="360"> 3.00</option>
+                            <option value="420"> 4.00</option>
+                            <option value="480"> 5.00</option>
+                            <option value="540"> 6.00</option>
+                            <option value="600"> 7.00</option>
+                            <option value="660"> 8.00</option>
+                            <option value="720"> 9.00</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="event-end-time">
+                    <div class="field-container">
+                        <label>End Time:</label>
+                    </div>
+                    <div class="field-container">
+                        <select id="endTime">
+                            <option value="0"> 9.00</option>
+                            <option value="60"> 10.00</option>
+                            <option value="120"> 11.00</option>
+                            <option value="180"> 12.00</option>
+                            <option value="240"> 1.00</option>
+                            <option value="300"> 2.00</option>
+                            <option value="360"> 3.00</option>
+                            <option value="420"> 4.00</option>
+                            <option value="480"> 5.00</option>
+                            <option value="540"> 6.00</option>
+                            <option value="600"> 7.00</option>
+                            <option value="660"> 8.00</option>
+                            <option value="720"> 9.00</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="event-btn-container">
+                    <div>
+                            <button type="button" class="btn btn-primary submit" id="eventSubmit" disabled>Add Event</button>
+                    </div>
+                    <div class="msg-container">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="event-container">
+                    <div class="time-bar">
+                        <div class="hours-slot"><span>9.00</span></div>
+                        <div class="hours-slot"><span>8.00</span></div>
+                        <div class="hours-slot"><span>7.00</span></div>
+                        <div class="hours-slot"><span>6.00</span></div>
+                        <div class="hours-slot"><span>5.00</span></div>
+                        <div class="hours-slot"><span>4.00</span></div>
+                        <div class="hours-slot"><span>3.00</span></div>
+                        <div class="hours-slot"><span>2.00</span></div>
+                        <div class="hours-slot"><span>1.00</span></div>
+                        <div class="hours-slot"><span>12.00</span></div>
+                        <div class="hours-slot"><span>11.00</span></div>
+                        <div class="hours-slot"><span>10.00</span></div>
+                        <div class="hours-slot"><span>9.00</span></div>
+                    </div>
+                    <div class="cal-main-box">
+                        <div class="calender-content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

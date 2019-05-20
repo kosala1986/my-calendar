@@ -1,0 +1,104 @@
+
+@import "~bootstrap/scss/bootstrap";
+@import "./color";
+
+.event-calendar-container {
+    .event-header {
+        text-align: center;
+        padding: 5px;
+        margin: 20px 0px 20px 0px;
+        font-size: 24px;
+    }
+
+    .event-container {
+        display: flex;
+        flex-direction: row;
+        background-color: $white;
+        margin-bottom: 50px;
+        .time-bar {
+            width: 55px;
+            display: flex;
+            border-right: 1px solid $black;
+            flex-direction: column;
+            .hours-slot {
+                position: relative;
+                height: 120px;
+                text-align: center;
+                display: flex;
+                span {
+                    display: flex;
+                    align-self: flex-end;
+               }
+           }
+            .hours-slot::after {
+                content: "";
+                display: block;
+                width: 20px;
+                float: right;
+                border-bottom: 1px solid $black;
+           }
+       }
+        .cal-main-box {
+           width: 600px;
+            overflow-y: auto;
+            border-bottom: 1px solid $black;
+            position: relative;
+            .calender-content {
+                position: absolute;
+                height:100%;
+                .event-box {
+                    position:absolute;
+                   //  background-color: $light_blue;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    span {
+                        margin: 0 auto;
+                        color: $white;
+                   }
+               }
+           }
+       }
+   }
+
+   .event-form {
+        width: 100%;
+        padding: 20px;
+        background-color: $white;
+        margin: 15px;
+        .event-name, .event-start-time, .event-end-time {
+            display: flex;
+            flex-direction: row;
+            line-height: 16px;
+            padding: 5x;
+        
+            .field-container {
+                padding: 0px 0px 10px 0px;
+                width: 200px;     
+                input, select {
+                    width: 100%;
+                }
+
+            }
+        }
+
+        .event-btn-container {
+            text-align: left;
+            padding: 10px 0px 0px 0px;
+            display: flex;
+            flex-direction: row;
+            button {
+                width: 120x;
+            }
+
+            .msg-container {
+                margin: auto;
+                span {
+                    line-height: 14px;
+                    font-weight: 600;
+                }
+            }
+        
+        }
+    }
+}
